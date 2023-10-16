@@ -7,7 +7,7 @@ echo "
 +----------------------------------------------------------------------
 | 本脚本用于宝塔面板7.7版本的一键开心，因为脚本造成的问题请自行负责！
 +----------------------------------------------------------------------
-| 安装脚本：curl -sSO https://gh.api.99988866.xyz/https://raw.githubusercontent.com/tvfuns/bt1khappy/main/install_panel.sh && bash install_panel.sh
+| 安装脚本：curl -sSO https://ghproxy.com/https://raw.githubusercontent.com/tvfuns/bt1khappy/main/install_panel.sh && bash install_panel.sh
 +----------------------------------------------------------------------
 "
 while [ "$go" != 'y' ] && [ "$go" != 'n' ]
@@ -34,11 +34,11 @@ if [ -f ${plugin_file} ];then
     chattr -i /www/server/panel/data/plugin.json
     rm /www/server/panel/data/plugin.json
     cd /www/server/panel/data
-    wget https://gh.api.99988866.xyz/https://raw.githubusercontent.com/tvfuns/bt1khappy/main/plugin.json
+    wget https://ghproxy.com/https://raw.githubusercontent.com/tvfuns/bt1khappy/main/plugin.json
     chattr +i /www/server/panel/data/plugin.json
 else
     cd /www/server/panel/data
-    wget https://gh.api.99988866.xyz/https://raw.githubusercontent.com/tvfuns/bt1khappy/main/plugin.json
+    wget https://ghproxy.com/https://raw.githubusercontent.com/tvfuns/bt1khappy/main/plugin.json
     chattr +i /www/server/panel/data/plugin.json
 fi
 echo -e "插件商城开心结束."
@@ -50,11 +50,11 @@ if [ -f ${repair_file} ];then
     chattr -i /www/server/panel/data/repair.json
     rm /www/server/panel/data/repair.json
     cd /www/server/panel/data
-    wget https://gh.api.99988866.xyz/https://raw.githubusercontent.com/tvfuns/bt1khappy/main/repair.json
+    wget https://ghproxy.com/https://raw.githubusercontent.com/tvfuns/bt1khappy/main/repair.json
     chattr +i /www/server/panel/data/repair.json
 else
     cd /www/server/panel/data
-    wget https://gh.api.99988866.xyz/https://raw.githubusercontent.com/tvfuns/bt1khappy/main/repair.json
+    wget https://ghproxy.com/https://raw.githubusercontent.com/tvfuns/bt1khappy/main/repair.json
     chattr +i /www/server/panel/data/repair.json
 fi
 echo -e "文件防修改结束."
