@@ -10,14 +10,14 @@ echo "
 | 安装脚本：curl -sSO https://ghproxy.com/https://raw.githubusercontent.com/tvfuns/bt1khappy/main/install_panel.sh && bash install_panel.sh
 +----------------------------------------------------------------------
 "
-while [ "$go" != 'y' ] && [ "$go" != 'n' ]
-do
-	read -p "请确认你已经安装的版本是7.7，请确认你将开心的宝塔面板用于学习！(y/n): " go;
-done
+#while [ "$go" != 'y' ] && [ "$go" != 'n' ]
+#do
+#	read -p "请确认你已经安装的版本是7.7，请确认你将开心的宝塔面板用于学习！(y/n): " go;
+#done
 
-if [ "$go" == 'n' ];then
-	exit;
-fi
+#if [ "$go" == 'n' ];then
+#	exit;
+#fi
 
 #修改强制登录开始
 sed -i "s|if (bind_user == 'True') {|if (bind_user == 'REMOVED') {|g" /www/server/panel/BTPanel/static/js/index.js
